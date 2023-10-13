@@ -55,12 +55,3 @@ for exercise in result["exercises"]:
 
 sheet_response = requests.post(url=sheety_add_endpoint, json=sheet_inputs, headers=sheety_headers)
 print(sheet_response.text)
-
-
-# this was a fun project. I spent the most time by far trying to figure out how to post a request using sheety. needing
-# to have the inputs nested in a root property, tripped me up for longer than I care to admit. I kept trying to just
-# write the property but that would invalidate the refrences to exercise stats and the date/time. Lots of googling
-# later I was able to find an example and use a for loop to get the job done.
-
-# For ease of use in the future I added this codebase to replit for access on the go. Helped practice some additional
-# environmental variable use.
